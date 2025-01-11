@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.james.tinkersancient.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "tinkersancient.refmap.json",
+  "mixins": [
+    "BehaviourMixin",
+    "CastingTableMixin",
+    "PartBuilderRecycleMixin",
+    "PiglinBruteAiMixin",
+    "PiglinBruteMixin",
+    "StationPartSwapMixin",
+    "StationScreenMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

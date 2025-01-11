@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+  ],
+  "lootTable": "tinkersancient:chests/desert_pyramid",
+  "type": "tinkersancient:add_loot_table"
+}

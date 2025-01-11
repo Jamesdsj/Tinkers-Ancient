@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "parts": [
+        {
+            "path": "tinkersancient:item/tool/battlesign/battlesign_handle",
+            "stat_type": "tconstruct:plating_shield"
+        },
+        {
+            "path": "tinkersancient:item/tool/battlesign/battlesign_head",
+            "stat_type": "tconstruct:head"
+        },
+        {
+            "path": "tinkersancient:item/tool/war_pick/war_pick_handle",
+            "stat_type": "tconstruct:handle"
+        },
+        {
+            "path": "tinkersancient:item/tool/war_pick/war_pick_limb",
+            "stat_type": "tconstruct:limb"
+        },
+        {
+            "path": "tinkersancient:item/tool/melting_pan/melting_pan_handle",
+            "stat_type": "tconstruct:handle"
+        },
+        {
+            "path": "tinkersancient:item/tool/melting_pan/melting_pan_head",
+            "stat_type": "tconstruct:head"
+        }
+    ]
+}

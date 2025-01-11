@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tinkersancient:battlesign_head",
+    "tinkersancient:battlesign_handle",
+    "tinkersancient:war_pick_limb",
+    "tinkersancient:war_pick_handle",
+    "tinkersancient:melting_pan_head",
+    "tinkersancient:melting_pan_handle"
+  ]
+}

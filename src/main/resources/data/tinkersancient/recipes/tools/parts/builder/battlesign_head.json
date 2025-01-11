@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:part_builder",
+  "pattern": "tinkersancient:battlesign_head",
+  "pattern_item": [
+    {
+      "item": "tinkersancient:battlesign_head_cast"
+    }
+  ],
+  "cost": 6,
+  "result": {
+    "item": "tinkersancient:battlesign_head"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "loader": "tconstruct:material",
+  "parent": "forge:item/default",
+  "textures": {
+    "texture": "tinkersancient:item/tool/battlesign/battlesign_head"
+  },
+  "offset": [0, 0]
+}

@@ -1,0 +1,28 @@
+{
+  "icon": {
+    "item": "tconstruct:melting_pan",
+    "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
+  },
+  "input_slots": [
+    {
+      "filter": {
+        "item": "tinkersancient:melting_pan_head"
+      },
+      "icon": "tinkersancient:melting_pan_head",
+      "translation_key": "item.tinkersancient.melting_pan_head",
+      "x": 21,
+      "y": 53
+    },
+    {
+      "filter": {
+        "item": "tinkersancient:melting_pan_handle"
+      },
+      "icon": "tinkersancient:melting_pan_handle",
+      "translation_key": "item.tinkersancient.melting_pan_handle",
+      "x": 39,
+      "y": 35
+    }
+  ],
+  "sortIndex": 5,
+  "translation_key": "item.tinkersancient.melting_pan"
+}

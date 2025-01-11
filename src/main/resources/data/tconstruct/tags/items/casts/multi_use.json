@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#tconstruct:casts/multi_use/battlesign_head",
+    "#tconstruct:casts/multi_use/battlesign_handle",
+    "#tconstruct:casts/multi_use/war_pick_limb",
+    "#tconstruct:casts/multi_use/war_pick_handle",
+    "#tconstruct:casts/multi_use/melting_pan_head",
+    "#tconstruct:casts/multi_use/melting_pan_handle"
+  ]
+}

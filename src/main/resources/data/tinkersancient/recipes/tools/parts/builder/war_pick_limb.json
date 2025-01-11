@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:part_builder",
+  "pattern": "tinkersancient:war_pick_limb",
+  "pattern_item": [
+    {
+      "item": "tinkersancient:war_pick_limb_cast"
+    }
+  ],
+  "cost": 3,
+  "result": {
+    "item": "tinkersancient:war_pick_limb"
+  }
+}

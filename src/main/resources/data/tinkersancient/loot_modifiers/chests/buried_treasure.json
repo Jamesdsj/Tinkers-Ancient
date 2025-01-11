@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+  ],
+  "lootTable": "tinkersancient:chests/buried_treasure",
+  "type": "tinkersancient:add_loot_table"
+}

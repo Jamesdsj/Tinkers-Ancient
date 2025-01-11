@@ -1,0 +1,8 @@
+{
+  "type": "tconstruct:table_casting_material",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/war_pick_limb"
+  },
+  "item_cost": 3,
+  "result": "tinkersancient:war_pick_limb"
+}

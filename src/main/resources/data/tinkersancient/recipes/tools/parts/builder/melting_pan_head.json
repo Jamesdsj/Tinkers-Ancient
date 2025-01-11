@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:part_builder",
+  "pattern": "tinkersancient:melting_pan_head",
+  "pattern_item": [
+    {
+      "item": "tinkersancient:melting_pan_head_cast"
+    }
+  ],
+  "cost": 6,
+  "result": {
+    "item": "tinkersancient:melting_pan_head"
+  }
+}

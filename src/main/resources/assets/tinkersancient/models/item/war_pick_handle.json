@@ -1,0 +1,8 @@
+{
+  "loader": "tconstruct:material",
+  "parent": "forge:item/default",
+  "textures": {
+    "texture": "tinkersancient:item/tool/war_pick/war_pick_handle"
+  },
+  "offset": [0, 0]
+}

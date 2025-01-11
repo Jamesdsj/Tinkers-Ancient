@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "entries": [
+    "tinkersancient:chests/woodland_mansion",
+    "tinkersancient:chests/desert_pyramid",
+    "tinkersancient:chests/shipwreck_treasure",
+    "tinkersancient:chests/buried_treasure"
+  ]
+}
