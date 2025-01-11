@@ -1,5 +1,6 @@
 package com.james.tinkersancient;
 
+import com.james.tinkersancient.contents.FilePackResources;
 import com.james.tinkersancient.contents.TinkersAncientEffects;
 import com.james.tinkersancient.contents.TinkersAncientItems;
 import com.james.tinkersancient.contents.TinkersAncientLootModifiers;
@@ -7,6 +8,7 @@ import com.james.tinkersancient.events.CastingTableInteractEvent;
 import com.james.tinkersancient.events.PiglinBruteInteractEvent;
 import com.mojang.logging.LogUtils;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.metadata.pack.PackMetadataSection;
 import net.minecraft.server.packs.repository.Pack;
@@ -20,6 +22,8 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forgespi.language.IModFileInfo;
+import net.minecraftforge.forgespi.locating.IModFile;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.resource.PathPackResources;
 import org.slf4j.Logger;
@@ -60,21 +64,18 @@ public class TinkersAncient {
     }
     @SubscribeEvent
     public static void addWarPickPack(AddPackFindersEvent event) {
-        try {
-            if (event.getPackType() == PackType.CLIENT_RESOURCES) {
-                var resourcePath = ModList.get().getModFileById(MODID).getFile().findResource("war_pick_fix");
-                var pack = new PathPackResources(ModList.get().getModFileById(MODID).getFile().getFileName() + ":" + resourcePath, resourcePath);
-                var metadataSection = pack.getMetadataSection(PackMetadataSection.SERIALIZER);
-                if (metadataSection != null) {
-                    event.addRepositorySource((packConsumer, packConstructor) ->
-                            packConsumer.accept(packConstructor.create(
-                                    "tinkersancient:war_pick_fix", Component.literal("War Pick Fix"), true,
-                                    () -> pack, metadataSection, Pack.Position.TOP, PackSource.BUILT_IN, false)));
-                }
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        IModFileInfo modFileInfo = ModList.get().getModFileById(MODID);
+        if (modFileInfo == null) {
+            LOGGER.error("Could not find Create mod file info; built-in resource packs will be missing!");
+            return;
         }
+        IModFile modFile = modFileInfo.getFile();
+        event.addRepositorySource(consumer -> {
+            Pack pack = Pack.readMetaAndCreate(new ResourceLocation(MODID, "war_pick_fix").toString(), Component.literal("War Pick Fix"), true, id -> new FilePackResources(id, modFile, "war_pick_fix"), PackType.CLIENT_RESOURCES, Pack.Position.TOP, PackSource.BUILT_IN);
+            if (pack != null) {
+                consumer.accept(pack);
+            }
+        });
     }
 
 }

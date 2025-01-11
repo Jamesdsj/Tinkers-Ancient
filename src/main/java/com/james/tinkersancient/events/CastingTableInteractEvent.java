@@ -30,8 +30,8 @@ public class CastingTableInteractEvent {
     @SubscribeEvent
     public void onInteractTable(PlayerInteractEvent.RightClickBlock event) {
         ItemStack itemStack = event.getEntity().getItemInHand(InteractionHand.MAIN_HAND);
-        BlockState state = event.getEntity().level.getBlockState(event.getPos());
-        BlockEntity blockEntity = event.getEntity().level.getBlockEntity(event.getPos());
+        BlockState state = event.getEntity().getCommandSenderWorld().getBlockState(event.getPos());
+        BlockEntity blockEntity = event.getEntity().getCommandSenderWorld().getBlockEntity(event.getPos());
         if(state.getBlock() == TinkerSmeltery.searedTable.get() && blockEntity != null){
             if(((InventoryBlockEntity)blockEntity).getItem(0).is(TinkersAncientItems.melting_pan_handle_cast_fragment_1.get()) && itemStack.is(TinkersAncientItems.melting_pan_handle_cast_fragment_2.get()))
             {

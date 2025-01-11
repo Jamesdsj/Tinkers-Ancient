@@ -87,7 +87,7 @@ public abstract class PiglinBruteMixin extends AbstractPiglin {
             int count = this.getPersistentData().getInt("golden_armor_count");
             if(RANDOM_2.nextFloat() <= 0.4f + count * 0.15f) {
                 this.swing(InteractionHand.OFF_HAND);
-                int i = this.level.random.nextInt(responseList.size());
+                int i = this.getCommandSenderWorld().random.nextInt(responseList.size());
                 BehaviorUtils.throwItem(this, responseList.get(i), optional.map(player -> player.position().add(0.0, 1.0, 0.0)).orElseGet(() -> getRandomNearbyPos(this).add(0.0, 1.0, 0.0)));
                 this.addEffect(new MobEffectInstance(TinkersAncientEffects.attackDisabledEffect.get(), 300, 0));
             }

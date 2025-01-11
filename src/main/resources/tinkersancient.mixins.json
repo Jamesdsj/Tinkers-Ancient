@@ -2,11 +2,11 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.james.tinkersancient.mixins",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_17",
   "refmap": "tinkersancient.refmap.json",
   "mixins": [
-    "BehaviourMixin",
     "CastingTableMixin",
+    "LivingEntityMixin",
     "PartBuilderRecycleMixin",
     "PiglinBruteAiMixin",
     "PiglinBruteMixin",

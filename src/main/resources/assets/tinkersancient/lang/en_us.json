@@ -27,5 +27,5 @@
   "item.tinkersancient.melting_pan.description": "A melting pan has both digging and ranged striking capabilities, with high accuracy and quick firing speed.\n",
   "gui.tconstruct.melting_pan.acquire": "Unfortunately, due to its age, the method of crafting it has been lost. However, its cast has been found in deserts, and some have set sail in search of it.",
   "recipe.tconstruct.tool_recycling.no_ancient": "Ancient tools cannot be recycled.",
-  "itemGroup.TinkersAncientGroup": "Tinkers Ancient Items"
+  "itemGroup.tinkersancient": "Tinkers Ancient Items"
 }

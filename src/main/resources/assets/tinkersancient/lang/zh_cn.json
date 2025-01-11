@@ -27,5 +27,5 @@
   "item.tinkersancient.melting_pan.description": "熔炼锅同时具有挖掘和远程打击能力，有较高的精准度且能快速发射。\n",
   "gui.tconstruct.melting_pan.acquire": "遗憾的是，由于年代久远，它的制作方法已经失传。但有人曾在沙漠里找到过它的铸模，也有人曾出海寻找它。",
   "recipe.tconstruct.tool_recycling.no_ancient": "远古工具不可回收。",
-  "itemGroup.TinkersAncientGroup": "远古匠艺"
+  "itemGroup.tinkersancient": "远古匠艺"
 }
